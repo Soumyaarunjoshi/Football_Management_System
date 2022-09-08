@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WEB PORTAL</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{
+
+
+    
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: purple;
+    color: dark blue;
+}
+#home {
+    width: 43px;
+    height: 44px;
+    background: url(home.gif) 0px 0px;
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+
+<style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+</head>
+<body>
+<div class="header">
+  
+<img src="laliga.jpg" alt="Paris" width="1000" height="250">
+  
+</div>
+
+<ul>
+  
+   <li class="dropdown">
+
+    <a href="javascript:void(0)" class="dropbtn">INFO</a>
+    <div class="dropdown-content">
+<a href=view.php>PLAYER</a>
+      <a href="viewmatch.php">MATCHES</a>
+      <a href="viewteams.php">TEAMS</a>
+      <a href=viewstats.php>STATISTICS</a>
+    </div>
+  </li>
+
+
+<li><a href="fixtures.php">FIXTURES</a></li>
+
+
+<li><a href="demo.php">STANDINGS</a></li>
+
+<li><a href="topgs.php">TOP GOAL SCORERS</a></li>
+
+<li><a href="searchvenues.php">SEARCH MATCH</a></li>
+
+<li><a href="login.php">ADMIN LOGIN</a></li>
+
+
+
+
+</ul>
+
+<marquee direction="right" behavior="slide" style="border:solid" bgcolor="lightblue"><font size="5">Get new updates here!!!</font><font size=6></font></marquee>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwiv9uWcocbXAhUKqo8KHeIiAWoQqUMIODAC&url=http%3A%2F%2Fdailypost.ng%2F2017%2F11%2F16%2Fla-liga-barcelona-trying-sell-suarez%2F&usg=AOvVaw3TBp1qzYBUDKAkP-hLZb2O">
+      <img src="n2.jpeg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">La Liga-Barcelona trying to sell me-Suarez</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.google.co.in/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwiv9uWcocbXAhUKqo8KHeIiAWoQqUMINDAB&url=http%3A%2F%2Fwww.sport-english.com%2Fen%2Fnews%2Freal-madrid%2Fmadrid-star-cristiano-ronaldo-blames-referees-for-his-lack-of-la-liga-goals-6430279&usg=AOvVaw0huQ7U7J_6l81fAtWEkkbw">
+      <img src="n1.jpeg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Madrid star Cristiano Ronaldo blames referees for his lack of La Liga goals</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://www.skysports.com/football/news/11095/11146675/la-liga-power-rankings-guillem-balague-examines-the-best-xi">
+      <img src="n3.jpeg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">La Liga Power Rankings: Guillem Balague examines the best XI</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="http://www.mirror.co.uk/sport/football/news/thomas-vermaelens-la-liga-comeback-11593339">
+      <img src="n4.jpeg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Thomas Vermaelen's La Liga comeback after 624 days hinted at what might have been for Barcelona defender</div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
